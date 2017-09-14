@@ -1,0 +1,19 @@
+Problem 1:
+-	Comparator and comparable both are interface but both are from different package. Comparator interface is from java.Util package while comparable is from java.lang package.
+
+-	Comparator has two methods namely compare(Object obj1,Object obj2) and equals(Object element).
+
+-	Comparable has one method compareTo(Object obj).
+
+-	Comparator is use in user defined class object while comparable is use in wrapper classes objects, user defined classes objects and String Objects.  
+
+-	So, Comparator is not used by Wrapper classes object all wrapper classes implement comparable interface.
+
+-	Collection class has two sort methods sort(List list) and sort(List list, Comparator c).
+
+-	sort(List list) is used when List elements are comparable type.
+
+		o	When this method calls it checks that the list is implemented the comparable interface and then it calls the compareTo(Object obj) method which compare and return 0 if they are same and if its bigger then return 1 else return -1.
+
+-	 sort(List list, Comparator c ) is used to sort the elements given by the comparator.
+		o	When this method calls it called the compare(Object obj,Object obj) method which compare the value and return the value on the basis of that either 0,1 or -1.
